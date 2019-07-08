@@ -1,7 +1,7 @@
 {
   "docs": {
-    "Akumina 4.5": ["ak-frame45", "ak-sitecontext", "ak-performance", "ak-performance-measuring"],
+    "Akumina": ["akumina-framework-45", "ak-sitecontext-javascript-updates", "ak-performance-considerations", "ak-performance-measuring", "ak-logger"],
     "akumina-widget-builder": ["ak-widget-builder", "ak-widget-builder-skipping-instances", "ak-widget-builder-token-replacement", "yo-akumina", "yo-simple", "yo-react"],
-    "General API": ["api"]
+    "AppManager": ["app-manager-hide-login-dialog", "app-manager-enable-load-balancing"]
   }
 }
