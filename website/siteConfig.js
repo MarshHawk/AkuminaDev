@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'ak-frame45', label: 'Docs'},
+    {doc: 'akumina-framework-45', label: 'Docs'},
     {doc: 'api', label: 'API'},
     {blog: true, label: 'Blog'},
   ],
