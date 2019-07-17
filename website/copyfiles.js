@@ -12,17 +12,25 @@ const listDir = (dir, fileList = []) => {
 
     files.forEach(file => {
         let name = file.replace(':', '');
-        let title = name.split('.md')[0];
-        let src = path.join(dir, file);
-        let newSrc = path.join(dir, name);
-        let oldContent = fs.readFileSync(path.join(dir, file), 'utf-8');
-        let newTitle = title.replace(/-/g, ' ')
-        fileList.push({
-            oldSrc: src,
-            newSrc: newSrc,
-            oldContent: oldContent,
-            newContent: `---\r\nid: ${title}\r\ntitle: ${newTitle}\r\n---\r\n\r\n`,
-        });
+        let titleSplit = name.split('.md');
+
+        if (titleSplit[1] == '') {
+
+            let name = file.replace(':', '');
+            let title = titleSplit[0];
+            let src = path.join(dir, file);
+            let newSrc = path.join(dir, name);
+            //console.log(src)
+            let oldContent = fs.readFileSync(src, 'utf-8');
+            let newTitle = title.replace(/-/g, ' ')
+            fileList.push({
+                oldSrc: src,
+                newSrc: newSrc,
+                oldContent: oldContent,
+                newContent: `---\r\nid: ${title}\r\ntitle: ${newTitle}\r\n---\r\n\r\n`,
+            });
+
+        }
     });
 
     return fileList;
