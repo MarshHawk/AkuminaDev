@@ -3,6 +3,8 @@
 //Ref: http://nephewapps.com/2018/09/09/programmatically-edit-any-file-in-nodejs/
 'use strict';
 
+'use strict';
+
 const path = require('path');
 const fs = require('fs');
 
@@ -15,12 +17,9 @@ const listDir = (dir, fileList = []) => {
         let titleSplit = name.split('.md');
 
         if (titleSplit[1] == '') {
-
-            let name = file.replace(':', '');
             let title = titleSplit[0];
             let src = path.join(dir, file);
             let newSrc = path.join(dir, name);
-            //console.log(src)
             let oldContent = fs.readFileSync(src, 'utf-8');
             let newTitle = title.replace(/-/g, ' ')
             fileList.push({
