@@ -1,6 +1,5 @@
 {
   "docs": {
-    "Akumina": ["Akumina.AddIn.Logger"],
     "Site-Package": ["Site-Package-SolutionFolder"]
   }
 }
