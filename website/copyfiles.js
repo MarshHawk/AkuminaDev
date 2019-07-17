@@ -28,7 +28,7 @@ const listDir = (dir, fileList = []) => {
     return fileList;
 };
 
-let foundFiles = listDir('~/../AkuminaDev.wiki');
+let foundFiles = listDir('../../AkuminaDev.wiki');
 foundFiles.forEach(f => {
     fs.unlinkSync(f.oldSrc);
     fs.writeFileSync(f.newSrc, f.newContent + f.oldContent);
