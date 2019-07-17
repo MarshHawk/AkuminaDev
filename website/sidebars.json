@@ -1,7 +1,6 @@
 {
   "docs": {
-    "Akumina": ["akumina-framework-45", "ak-sitecontext-javascript-updates", "ak-performance-considerations", "ak-performance-measuring", "ak-logger"],
-    "akumina-widget-builder": ["ak-widget-builder", "ak-widget-builder-skipping-instances", "ak-widget-builder-token-replacement", "yo-akumina", "yo-simple", "yo-react"],
-    "AppManager": ["app-manager-hide-login-dialog", "app-manager-enable-load-balancing"]
+    "Akumina": ["Akumina.AddIn.Logger"],
+    "Site-Package": ["Site-Package-SolutionFolder"]
   }
 }
